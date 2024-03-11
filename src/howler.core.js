@@ -28,6 +28,7 @@
      * @return {Howler}
      */
     init: function() {
+      console.log('Howler init');
       var self = this || Howler;
 
       // Create a global ID counter.
@@ -554,6 +555,7 @@
    * @param {Object} o Passed in properties for this group.
    */
   var Howl = function(o) {
+    console.log('Howler Howl');
     var self = this;
 
     // Throw an error if no source is provided.
@@ -654,6 +656,7 @@
      * @return {Howler}
      */
     load: function() {
+      console.log('Howler load');
       var self = this;
       var url = null;
 
@@ -739,6 +742,7 @@
      * @return {Number}          Sound ID.
      */
     play: function(sprite, internal) {
+      console.log('Howler play');
       var self = this;
       var id = null;
 
@@ -1751,6 +1755,7 @@
      * This will immediately stop all sound instances attached to this group.
      */
     unload: function() {
+      console.log('Howler unload');
       var self = this;
 
       // Stop playing any active sounds.
